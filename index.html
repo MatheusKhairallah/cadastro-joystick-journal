@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Joystick Journal</title>
+</head>
+
+<body>
+
+    <!-- Titulo e texto de boas vindas -->
+    <h1>Formulário de cadastro</h1>
+    <p>
+        <b>Junte-se à nossa guilda!</b> <br>
+        Seja bem-vindo ao <b>Joystick Journal</b>. Quer ficar por dentro de tudo o que acontece no mundo dos jogos, receber
+        análises em primeira mão e não perder nenhum lançamento? Preencha o cadastro abaixo e faça parte da nossa
+        comunidade. O seu próximo nível começa aqui!
+    </p>
+
+    <!-- Formulario de cadastro -->
+    <form action="finished.html">
+        <!-- Campos de dados pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="name">Nome completo:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="ex.: usuario@gmail.com"> <br><br>
+
+            <label for="dateBirthday">Data de nascimento:</label>
+            <input type="date" id="dateBirthday" name="dateBirthday">
+
+            <label for="tell">Telefone:</label>
+            <input type="tel" id="tell" name="tell" placeholder="ex.: (99) 99999-9999"> <br><br>
+
+            <label for="nationality">Nacionalidade:</label>
+            <select name="country" id="country">
+                <option>---Selecione---</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="bra">Brasil</option>
+                <option value="arg">Argentina</option>
+            </select>
+
+            <label for="city">Cidade:</label>
+            <select name="city" id="city">
+                <option>---Selecione---</option>
+                <option value="per">Peruíbe</option>
+                <option value="ita">Itanhaém</option>
+                <option value="mon">Mongaguá</option>
+                <option value="pg">Praia Grande</option>
+                <option value="sv">São Vicente</option>
+                <option value="san">Santos</option>
+                <option value="gua">Guarujá</option>
+                <option value="cub">Cubatão</option>
+            </select> <br><br>
+
+            <label for="password">Crie uma senha:</label>
+            <input type="password" id="password" name="password"> <br><br>
+            <label for="repeatPassword">Repita a senha criada:</label>
+            <input type="password" id="repeatPassword" name="repeatPassword">
+        </fieldset>
+
+        <!-- Campos de preferencias de conteudo -->
+        <fieldset>
+            <legend>Preferências</legend>
+
+            <p>Gêneros favoritos</p>
+            <input type="checkbox" id="battleRoyale" name="genreGame">
+            <label for="battleRoyale">Battle Royale</label>
+            <input type="checkbox" id="rpg" name="genreGame">
+            <label for="rpg">RPG</label>
+            <input type="checkbox" id="moba" name="genreGame">
+            <label for="moba">MOBA</label>
+            <input type="checkbox" id="fps" name="genreGame">
+            <label for="fps">FPS</label>
+            <input type="checkbox" id="actionAdventure" name="genreGame">
+            <label for="actionAdventure">Ação e aventura</label>
+            <input type="checkbox" id="simulator" name="genreGame">
+            <label for="simulator">Simulador</label>
+            <input type="checkbox" id="strategy" name="genreGame">
+            <label for="strategy">Estratégia</label> <br><br>
+
+            <p>Plataforma de preferência</p>
+            <input type="radio" id="pc" name="platformGame">
+            <label for="pc">Computador</label>
+            <input type="radio" id="xbox" name="platformGame">
+            <label for="xbox">Xbox</label>
+            <input type="radio" id="ps" name="platformGame">
+            <label for="ps">PlayStation</label>
+        </fieldset>
+
+        <!-- Campos perfil do usuario -->
+        <fieldset>
+            <legend>Perfil</legend>
+
+            <label for="profilePhoto">Foto de perfil:</label>
+            <input type="file" id="profilePhoto" name="profilePhoto"> <br><br>
+
+            <label for="aboutYou">Sobre você</label>
+            <p>Fale mais sobre você para que nossa IA possa trazer conteúdos conforme sua personalidade:</p>
+            <textarea id="aboutYou" rows="8" cols="50" name="aboutYou"></textarea>
+        </fieldset>
+
+        <!-- Campo de termos de uso -->
+        <input type="checkbox" id="accept" required>
+        <label for="accept">
+            Li e concordo com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a> do Joystick Journal.
+        </label> <br><br>
+
+        <!-- Botões -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+</body>
+
+</html>
